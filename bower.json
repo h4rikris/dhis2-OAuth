@@ -1,0 +1,27 @@
+{
+    "name": "oauth-dhis2",
+    "description": "OAuth authentication for DHIS2",
+    "main": "index.js",
+    "authors": [
+        "Hari krishna K"
+    ],
+    "license": "ISC",
+    "keywords": [
+        "OAuth",
+        "dhis2"
+    ],
+    "moduleType": [],
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "requirejs": "~2.1.22",
+        "angular": "angularjs#~1.4.8"
+    }
+}

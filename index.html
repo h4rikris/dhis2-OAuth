@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth</title>
+    <script data-main="main.js" src="bower_components/requirejs/require.js"></script>
+</head>
+
+<body>
+    <div ng-app="OAuth">
+        <div ng-controller="mainController as oAuth">
+            {{oAuth.value}}
+            <br>
+            <input type="text" ng-model="oAuth.username" placeholder="username" />
+            <input type="password" ng-model="oAuth.password" placeholder="password" />
+            <input type="text" ng-model="oAuth.url" placeholder="http://localhost:8080/uaa/oauth/token" />
+            <button ng-show="oAuth.username && oAuth.password && oAuth.url" ng-click="oAuth.login()">Click</button>
+        </div>
+    </div>
+</body>
+
+</html>
